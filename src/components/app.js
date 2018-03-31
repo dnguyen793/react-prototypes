@@ -1,29 +1,13 @@
 import React from 'react';
-import Table from './table';
+import './app.css';
+import Scrapbook from './scrapbook';
 
-const students = [
-    {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
-    },
-    {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
-    },
-    {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
-    }
-];
 
 function App() {
     return(
-        <div className="container">
-            <h1>Student Grade Table</h1>
-            <Table data = {students} />
+        <div className="main-container">
+            <h1 className="main-title">Scrapbook</h1>
+            <Scrapbook/>
         </div>
     );
 }
