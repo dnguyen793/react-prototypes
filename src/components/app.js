@@ -1,29 +1,20 @@
 import React from 'react';
-import Table from './table';
-
-const students = [
-    {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
-    },
-    {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
-    },
-    {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
-    }
-];
+import {Route} from 'react-router-dom';
+import Welcome from './welcome';
+import Nav from './nav';
+import OurMacarons from './our_macarons';
+import GiftsParties from './gifts_parties';
+import Contact from './contact';
+import './nav.css';
 
 function App() {
     return(
         <div className="container">
-            <h1>Student Grade Table</h1>
-            <Table data = {students} />
+            <Nav/>
+            <Route exact path="/" component={ Welcome }/>
+            <Route path="/our-macarons" component={ OurMacarons }/>
+            <Route path="/gifts-parties" component={GiftsParties}/>
+            <Route path="/contact" component={Contact}/>
         </div>
     );
 }
