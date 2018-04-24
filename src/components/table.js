@@ -1,23 +1,21 @@
 import React from 'react';
 
+function Table( props ){
 
-export default ( props ) => {
-    const tableRows = props.data.map((item, index) => {
-        // console.log(item);
+    const tableRows = props.data.map((item, index)=>{
+        console.log('item:', item);
         return(
-            <tr key = {index}>
-                <td>{item.name}</td>
+            <tr key={index}>
+                <td>{item.student}</td>
                 <td>{item.course}</td>
                 <td>{item.grade}</td>
             </tr>
-        );
+        )
     });
+
     return(
-
         <table className="table">
-
-
-            <thead className="thead-inverse">
+            <thead className="thead-inverse ">
                 <tr>
                     <th>Name</th>
                     <th>Course</th>
@@ -26,23 +24,9 @@ export default ( props ) => {
             </thead>
             <tbody>
                 {tableRows}
-                {/*<tr>*/}
-                    {/*<td>djkfhdfk</td>*/}
-                    {/*<td>fdkjhfskjd</td>*/}
-                    {/*<td>88</td>*/}
-                {/*</tr>*/}
-                {/*<tr>*/}
-                    {/*<td>djkfhdfk</td>*/}
-                    {/*<td>fdkjhfskjd</td>*/}
-                    {/*<td>88</td>*/}
-                {/*</tr>*/}
-                {/*<tr>*/}
-                    {/*<td>djkfhdfk</td>*/}
-                    {/*<td>fdkjhfskjd</td>*/}
-                    {/*<td>88</td>*/}
-                {/*</tr>*/}
             </tbody>
         </table>
-    );
-};
+    )
+}
 
+export default Table;

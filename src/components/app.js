@@ -3,29 +3,29 @@ import Table from './table';
 
 const students = [
     {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
+        student: 'Bruce Wayne',
+        course: 'Criminal Justice',
+        grade: '94'
     },
     {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
+        student: 'Barry Allen',
+        course: 'Forensic Science',
+        grade: '98'
     },
     {
-        name: 'dkfh kdfhjdf',
-        course: 'dkfhdjfh',
-        grade: 88
-    }
+        student: 'Clark Kent',
+        course: 'Creative Writing',
+        grade: '86'
+    },
 ];
 
-function App() {
+function App(){
     return(
         <div className="container">
             <h1>Student Grade Table</h1>
             <Table data = {students} />
         </div>
-    );
+    )
 }
 
 export default App;
