@@ -1,13 +1,13 @@
 import React from 'react';
-import Stopwatch from './stopwatch';
+import MovieContainer from './movie_container';
 
-function App() {
+function Container(){
     return(
         <div className="container">
-            <h1 className="text-center">Stopwatch</h1>
-            <Stopwatch />
+            <h1 className="text-center">Axios Demo</h1>
+            <MovieContainer />
         </div>
-    );
+    )
 }
 
-export default App;
+export default Container;
